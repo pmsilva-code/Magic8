@@ -4,12 +4,21 @@ import random
 def answer_generator():
 
     name = "David"
-    questions = "David go to the store today?"
+    questions = ""
     answer = ""
 
-    random_number = random.randint(1, 9)
+    random_number = random.randint(1, 15)
 
-    if random_number == 1:
+    if name == "":
+        answer = "Outlook not so good"
+        print(f"asks: Will I win the lottery?")
+        print(f"Magic 8-Ball's answer: {answer}")
+
+    elif questions == "":
+        answer = "Magic 8-Ball cannot provide a fortune, ask a question."
+        print(f"Magic 8-Ball's answer: {answer}")
+
+    elif random_number == 1:
         answer = "Yes - definitely."
         print(f"{name} asks: {questions}")
         print(f"Magic 8-Ball's answer: {answer}")
@@ -45,8 +54,32 @@ def answer_generator():
         answer = "Very doubtful."
         print(f"{name} asks: {questions}")
         print(f"Magic 8-Ball's answer: {answer}")
+    elif random_number == 10:
+        answer = "As I see it, yes."
+        print(f"{name} asks: {questions}")
+        print(f"Magic 8-Ball's answer: {answer}")
+    elif random_number == 11:
+        answer = "You may rely on it."
+        print(f"{name} asks: {questions}")
+        print(f"Magic 8-Ball's answer: {answer}")
+    elif random_number == 12:
+        answer = "Concentrate and ask again."
+        print(f"{name} asks: {questions}")
+        print(f"Magic 8-Ball's answer: {answer}")
+    elif random_number == 13:
+        answer = "It is certain."
+        print(f"{name} asks: {questions}")
+        print(f"Magic 8-Ball's answer: {answer}")
+    elif random_number == 14:
+        answer = "It is decidedly so."
+        print(f"{name} asks: {questions}")
+        print(f"Magic 8-Ball's answer: {answer}")
+    elif random_number == 15:
+        answer = "Signs point to yes."
+        print(f"{name} asks: {questions}")
+        print(f"Magic 8-Ball's answer: {answer}")
     else:
-        answer = "Error"
+        print(f"{name} asks: {questions}")
         print(f"Magic 8-Ball's answer: {answer}")
 
 
